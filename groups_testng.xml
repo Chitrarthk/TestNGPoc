@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Poc TestNG groups">
+    <test verbose="2" preserve-order="true" name="C:/MyApp/TestNGPoc">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <exclude name="unit_test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.infa.poc.TestNGXmlTestExample"/>
+            <class name="com.infa.testngpkg.poc.TestNGPKGTestExample"/>
+        </classes>
+    </test>
+</suite>

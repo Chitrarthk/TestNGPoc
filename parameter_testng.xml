@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Poc TestNG">
+    <test verbose="2" preserve-order="true" name="C:/MyApp/TestNGPoc">
+        <parameter name="username" value="abc123"/>
+        <parameter name="password" value="1234"/>
+        <parameter name="db_url" value="www.mongodb.org"/>
+        <classes>
+            <class name="com.infa.poc.TestNGParameterTestExample"/>
+        </classes>
+    </test>
+</suite>

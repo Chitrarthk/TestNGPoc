@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Poc TestNG">
+    <test verbose="2" preserve-order="true" name="C:/MyApp/TestNGPoc">
+        <classes>
+            <class name="com.infa.poc.TestNGTestExample">
+                <methods>
+                    <include name="pocTest_1"/>
+                    <exclude name="pocTest_2"/>
+                    <exclude name="pocTest_3"/>
+                </methods>
+
+            </class>
+            <class name="com.infa.poc.TestNGXmlTestExample">
+                <methods>
+                    <exclude name="pocTest_1"/>
+                    <include name="pocTest_2"/>
+                    <include name="pocTest_3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
